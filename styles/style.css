@@ -27,7 +27,7 @@
 }
 
 .header__container {
-  composes: container;
+  max-width: var(--content-width);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,11 +45,6 @@
   margin-bottom: 1.2rem;
 }
 
-@container (inline-size < 375px) {
-  .header__logo {
-    font-size: clamp(33px, 14cqi, 49px);
-  }
-}
 
 .header__title {
   font-family: var(--font-family-accent);
@@ -143,7 +138,7 @@
   text-shadow: -1px -1px 0 var(--text-stroke-color), 1px -1px 0 var(--text-stroke-color);
 }
 
-@supports (text-stroke: 1px white) or (-webkit-text-stroke: 1px white) {
+@supports (text-stroke: 1px white) or (-webkit-text-stroke: 1px #ffffff) {
   .label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--text-stroke-color, #ffffff);
