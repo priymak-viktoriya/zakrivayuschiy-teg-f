@@ -140,8 +140,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--lable-text-color, #000000);
-  text-shadow: -1px -1px 0 var(--text-stroke-color), 1px -1px 0 var(--text-stroke-color),
-    -1px 1px 0 var(--text-stroke-color), 1px 1px 0 var(--text-stroke-color);
+  text-shadow: -1px -1px 0 var(--text-stroke-color), 1px -1px 0 var(--text-stroke-color);
 }
 
 @supports (text-stroke: 1px white) or (-webkit-text-stroke: 1px white) {
@@ -153,7 +152,6 @@
 
 .card__text {
   font-family: var(--font-family-main);
-  font-variation-settings: 'wght' var(--font-weight-text);
   font-size: var(--font-size-main);
   margin-top: 7px;
   padding-left: 25px;
