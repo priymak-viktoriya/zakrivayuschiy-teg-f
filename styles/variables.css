@@ -1,1 +1,37 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+
+  --font-family-main: 'Inter', 'Arial', sans-serif;
+  --font-family-accent: 'PressStart2P', 'Courier New', monospace;
+  --font-weight-bold: 700;
+  --font-weight-text: 400;
+  --font-size-main: 18px;
+  --font-size-button: 14px;
+
+  /* фоновый градиент*/
+  --bg-gradient:
+    repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(0deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --text-stroke-color: #ffffff;
+  --accent-color: #000000;
+  --heart-contour: #000000;
+  --animation-fill-color: #ff0000;
+  --button-text-color: #fff;
+  --button-bg-color: #fff;
+  --button-focus-shadow: 2px 2px 0 #000000;
+  --accent-color: #000000;
+  --heart-active-color: #ff0000;
+  --button-gap: 6px;
+  --button-width: 130px;
+  --button-height: 38px;
+  --contour-color: #000;
+  --animation-fill-color: rgb(255 0 0);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-text-size: clamp(14px, 2vw, 23px);
+  }
+}
