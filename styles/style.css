@@ -138,7 +138,7 @@
   text-shadow: -1px -1px 0 var(--text-stroke-color), 1px -1px 0 var(--text-stroke-color);
 }
 
-@supports (text-stroke: 1px white) or (-webkit-text-stroke: 1px #ffffff) {
+@supports (text-stroke: 1px #ffffff) or (-webkit-text-stroke: 1px #ffffff) {
   .label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--text-stroke-color, #ffffff);
