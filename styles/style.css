@@ -18,6 +18,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
+  max-width: 1440px;   
 }
 
 /* Шапка */
@@ -284,7 +285,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.card__like-button .button__text,
+.button__text,
 .save-button .button__text,
 .save-button__icon,
 .dialog__button .button__text {
@@ -310,6 +311,12 @@
   width: 400px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+dialog[open] {
+  display: block;
+
+}
+
 
 .dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
@@ -352,46 +359,75 @@
 }
 
 @media (min-width: 1024px) {
-  .page {
-    margin-left: 370px;
-    margin-right: 370px;
-  }
-
+  
+  /* Шапка */
   .header {
-    min-width: 780px;
-    width: 100vh;
-    min-height: 368px;
+    margin-bottom: 120px;
+    display: grid;
+  justify-items: center;
+  align-items: center;
   }
-
   .header__container {
-    min-height: 368px;
-  }
+    margin-top: 120px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    width: 700px;
 
+  }
   .header__logo {
     font-size: 65px;
     margin-bottom: 1.5rem;
   }
-
   .header__title {
     font-size: 23px;
   }
 
+  /* Карточки */
   .card {
-    min-width: 700px;
+    max-width: 700px;
+    margin-bottom: 70px;
   }
-
-
+  .card__title {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .card__text,
   .card__memory {
+    padding-left: 30px;
     padding-right: 30px;
   }
 
+  /* Лейбл */
+  .label {
+    top: 30px;
+    right: 30px;
+    font-size: 16px;
+    opacity: 0.6;
+  }
 
+  /* Кнопки действий */
+  .card__actions {
+    gap: 1rem;
+    padding-right: 30px;
+    padding-bottom: 25px;
+  }
+  .card__like-button {
+    width: 140px;
+    height: 42px;
+    font-size: 16px;
+  }
+  .like-icon {
+    width: 44px;
+    height: 40px;
+    margin-top: 0;
+  }
+
+  /* Кнопка сохранения */
   .save-button {
     min-width: 335px;
     min-height: 55px;
   }
-
   .save-button__icon {
     width: 28px;
     height: 28px;
@@ -402,25 +438,20 @@
     width: 500px;
     max-width: 90%;
   }
-
   .dialog__container {
     padding: 2.5rem;
     gap: 2rem;
   }
-
   .dialog__icon {
     width: 60px;
     height: 60px;
   }
-
   .dialog__text {
     font-size: 16px;
   }
-
   .dialog__description {
     font-size: 16px;
   }
-
   .dialog__button {
     padding: 0.75rem 1.5rem;
     font-size: 16px;

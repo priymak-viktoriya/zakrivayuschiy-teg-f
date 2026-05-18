@@ -110,6 +110,12 @@
 .card__like-button::before,
 .save-button::before,
 .dialog__button::before {
+  content: '';                   
+  position: absolute;             
+  top: 0;                         
+  left: 0;                       
+  width: 100%;                   
+  height: 100%;
   background-color: #000000;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
