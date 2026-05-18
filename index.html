@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="./styles/globals.css" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/animations.css" />
-  <link rel="stylesheet" href="./svg/cards.svg" />
 </head>
 
 <body class="page">
@@ -373,11 +372,10 @@
   </main>
 
   <div class="save-button-wrapper">
-    <button class="save-button" type="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 39 39">
-        <use href="./svg/disketa.svg"></use>
+    <button class="save-button" type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
+      <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="none" viewBox="0 0 39 39">
+        <use href="./svg/disketa.svg" fill="currentColor" color="currentColor"></use>
       </svg>
-
       <span class="button__text">Сохранить на память</span>
     </button>
   </div>
@@ -385,37 +383,26 @@
   <!-- Модальное окно -->
   <dialog class="dialog" id="memory-dialog">
     <div class="dialog__container">
-      <svg class="dialog__icon" width="40" height="40" viewBox="0 0 39 39">
+      <svg class="dialog__icon" width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true">
         <use href="/svg/disketa.svg"></use>
       </svg>
 
       <div class="dialog__content">
         <p class="dialog__text">
-          ВСТАВЬТЕ ДИСКЕТУ,<br>
+          ВСТАВЬТЕ ДИСКЕТУ,
           ЧТОБЫ ПРОДОЛЖИТЬ
         </p>
 
-        <p class="dialog__description">
-          Место, чтобы остановиться, подумать и написать,<br>
-          что вы чувствуете в этой точке пути.
-        </p>
-
-        <button class="dialog__button" id="dialog-ok">
+        <button class="dialog__button" id="dialog-ok" onclick="window['dialog-id'].close()">
           <span class="button__text">OK</span>
         </button>
       </div>
     </div>
   </dialog>
 
-
-  <svg style="display: none;">
-    <symbol id="floppy-icon" viewBox="0 0 39 39">
-      <rect width="39" height="39" rx="6" fill="currentColor" />
-      <rect x="9" y="6" width="21" height="15" fill="#ffffff" />
-      <rect x="12" y="25" width="15" height="8" fill="#ffffff" rx="2" />
-    </symbol>
-  </svg>
   <script src="./scripts/like.js"></script>
+
 </body>
 
 </html>

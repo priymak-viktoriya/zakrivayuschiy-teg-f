@@ -188,14 +188,6 @@
   outline: none;
 }
 
-.card__icon-button:focus-visible {
-  border-color: var(--accent-color);
-}
-
-.card__icon-button::before {
-  display: none;
-}
-
 .save-button-wrapper {
   max-width: var(--content-width);
   width: 100%;
@@ -262,7 +254,7 @@
 .card__icon-button:focus-visible {
   box-shadow: none;
   outline: none;
-  border-color: #0000;
+  border-color: var(--accent-color);
 }
 
 .card__icon-button::before {
@@ -275,7 +267,6 @@
 }
 
 .card__like-button {
-  position: relative;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
   border: 2px solid #000;
@@ -301,10 +292,7 @@
   z-index: 2;
   mix-blend-mode: difference;
   color: #ffffff;
-
 }
-
-
 
 .like-icon {
   width: 39px;
@@ -369,7 +357,6 @@
     margin-right: 370px;
   }
 
-  /* Шапка */
   .header {
     min-width: 780px;
     width: 100vh;
@@ -389,7 +376,6 @@
     font-size: 23px;
   }
 
-  /* Карточки */
   .card {
     min-width: 700px;
   }
@@ -401,8 +387,6 @@
   }
 
 
-
-  /* Кнопка сохранения */
   .save-button {
     min-width: 335px;
     min-height: 55px;
