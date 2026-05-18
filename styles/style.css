@@ -221,7 +221,6 @@
   align-self: flex-start;
 }
 
-.card__like-button,
 .save-button,
 .dialog__button {
   position: relative;
@@ -233,6 +232,12 @@
 }
 
 .card__like-button {
+   position: relative;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
   margin-right: 25px;
   margin-bottom: 20px;
   width: var(--button-width, 130px);
