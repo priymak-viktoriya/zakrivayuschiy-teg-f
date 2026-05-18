@@ -31,11 +31,6 @@
   }
 }
 
-
-.like-icon .contour {
-  outline: #000000;
-}
-
 .like-icon {
   transform-origin: center;
   cursor: pointer;
@@ -48,6 +43,7 @@
 .like-icon .contour {
   fill: var(--contour-color);
   transition: fill 0.1s linear;
+  outline: #000000;
 }
 
 .like-icon .core {
