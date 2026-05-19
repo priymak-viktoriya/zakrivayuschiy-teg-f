@@ -381,23 +381,20 @@
   </div>
 
   <!-- Модальное окно -->
-  <dialog class="dialog" id="memory-dialog">
+  <dialog id="dialog-id">
     <div class="dialog__container">
       <svg class="dialog__icon" width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true">
         <use href="/svg/disketa.svg"></use>
       </svg>
+      <p class="dialog__text">
+        ВСТАВЬТЕ ДИСКЕТУ,
+        ЧТОБЫ ПРОДОЛЖИТЬ
+      </p>
 
-      <div class="dialog__content">
-        <p class="dialog__text">
-          ВСТАВЬТЕ ДИСКЕТУ,
-          ЧТОБЫ ПРОДОЛЖИТЬ
-        </p>
-
-        <button class="dialog__button" id="dialog-ok" onclick="window['dialog-id'].close()">
-          <span class="button__text">OK</span>
-        </button>
-      </div>
+      <button class="dialog__button" id="dialog-ok" type="button" onclick="window['dialog-id'].close()">
+        <span class="button__text">OK</span>
+      </button>
     </div>
   </dialog>
 
