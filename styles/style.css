@@ -235,8 +235,6 @@
   height: var(--button-height, 38px);
   font-family: var(--font-family-accent);
   font-size: 14px;
-  width: 130px;
-  height: 38px;
 }
 
 
