@@ -10,7 +10,6 @@
 
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 h1,
@@ -51,18 +50,4 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-}
-
-
-.page {
-   margin: 0 auto;
-  font-family: var(--font-family-main);
-  font-variation-settings: 'wght' var(--font-weight-text);
-  color: #000000;
-  background-image: var(--bg-gradient);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
 }

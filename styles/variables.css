@@ -2,16 +2,16 @@
 :root {
 
   --font-family-main: 'Inter', 'Arial', sans-serif;
-  --font-family-accent: 'PressStart2P', 'Courier New', monospace;
-  --font-weight-bold: 700;
-  --font-weight-text: 400;
+  --font-family-accent: 'PressStart2P', 'fantasy', monospace;
+  --font-weight-bold: 715;
+  --font-weight-text: 410;
   --font-size-main: 18px;
   --font-size-button: 14px;
 
   /* фоновый градиент*/
   --bg-gradient:
-    repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(0deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --text-stroke-color: #ffffff;
@@ -28,6 +28,11 @@
   --button-height: 38px;
   --contour-color: #000;
   --animation-fill-color: rgb(255 0 0);
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --background-white: #ffffff;
+  --border-color: #000000;
+  --text-color: #000000;
 }
 
 @media (min-width: 1024px) {

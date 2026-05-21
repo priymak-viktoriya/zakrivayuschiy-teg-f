@@ -99,26 +99,42 @@
   animation: change-opacity 0.3s 0.3s ease-in;
 }
 
+.button {
+  position: relative;
+  background-color: var(--white-color, #ffffff);
+  border: 2px solid var(--border-color, #000000);
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
 
-.card__like-button:focus,
-.save-button:focus,
-.dialog__button:focus {
+.button:focus,
+.button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-color, #000000);
 }
 
-.card__like-button::before,
-.save-button::before,
-.dialog__button::before {
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: var(--black-color, #000000);
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
   z-index: 1;
 }
 
-.card__like-button:hover::before,
-.save-button:hover::before,
-.dialog__button:hover::before {
+.button:hover::before {
   transform: translateX(0);
+}
+
+.button .button__text,
+.button .button__icon {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: var(--white-color, #ffffff);
 }
