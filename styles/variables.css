@@ -21,18 +21,15 @@
   --button-text-color: #fff;
   --button-bg-color: #fff;
   --button-focus-shadow: 2px 2px 0 #000000;
-  --accent-color: #000000;
   --heart-active-color: #ff0000;
   --button-gap: 6px;
   --button-width: 130px;
   --button-height: 38px;
   --contour-color: #000;
   --animation-fill-color: rgb(255 0 0);
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --background-white: #ffffff;
+  --background_light-color: #ffffff;
+  --background_dark-color: #000000;
   --border-color: #000000;
-  --text-color: #000000;
 }
 
 @media (min-width: 1024px) {
