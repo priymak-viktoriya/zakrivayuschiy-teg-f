@@ -136,11 +136,10 @@
   transform: translateX(0);
 }
 
-.button .button__text, 
-.button .button__icon {
+.button .button__text,
+.button .save-button__icon {
   position: relative;
   z-index: 2;
   mix-blend-mode: difference;
   color: var(--button-text-color, #ffffff);
 }
-

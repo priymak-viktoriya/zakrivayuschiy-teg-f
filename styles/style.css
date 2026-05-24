@@ -197,7 +197,6 @@ display: flex;
 }
 
 .save-button {
-  font-family: var(--font-family-accent);
   font-size: 14px;
   min-width: 306px;
   max-height: 90px;
@@ -218,14 +217,13 @@ display: flex;
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  fill: var(--accent-color, #000000);
+  color: var(--accent-color, #000000);
 }
 
 .dialog__button {
   padding: 0.5rem 1rem;
   background-color: var(--background_light-color);
   width: 100%;
-  font-family: var(--font-family-accent);
   font-size: 14px;
 }
 
@@ -301,10 +299,6 @@ display: flex;
 
 @media (min-width: 1440px) {
 
-  .page {
-    margin-right: 82px;
-  }
-
   /* Шапка */
   .header {
     margin-bottom: 95px;
@@ -338,7 +332,7 @@ display: flex;
 
   .save-button {
     flex-direction: row;
-    min-width: 335px;
+    min-width: 350px;
     max-height: 55px;
   }
 
@@ -348,7 +342,9 @@ display: flex;
   }
 
   .dialog__container-button {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
   }
+
 }
