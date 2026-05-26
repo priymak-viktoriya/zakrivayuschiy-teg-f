@@ -192,7 +192,7 @@
 .save-button-wrapper {
   margin: 2rem auto;
   margin-bottom: 100px;
-display: flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -217,7 +217,9 @@ display: flex;
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  color: var(--accent-color, #000000);
+  color: var(--text-stroke-color, #ffffff);
+  mix-blend-mode: difference;
+  z-index: 2;
 }
 
 .dialog__button {
@@ -232,13 +234,6 @@ display: flex;
   margin-bottom: 20px;
   width: var(--button-width, 130px);
   height: var(--button-height, 38px);
-}
-
-
-.save-button__icon {
-  width: 20px;
-  height: 20px;
-  display: block;
 }
 
 .card__icon-button:focus-visible {
@@ -344,7 +339,7 @@ display: flex;
   .dialog__container-button {
     margin-left: 20px;
     margin-right: 20px;
-   
+
   }
 
 }

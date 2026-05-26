@@ -136,8 +136,7 @@
   transform: translateX(0);
 }
 
-.button .button__text,
-.button .save-button__icon {
+.button .button__text {
   position: relative;
   z-index: 2;
   mix-blend-mode: difference;
