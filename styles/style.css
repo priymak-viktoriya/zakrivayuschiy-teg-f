@@ -170,7 +170,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.30rem;
 }
 
 .card__icon-button {
@@ -327,8 +327,12 @@
 
   .save-button {
     flex-direction: row;
-    min-width: 350px;
-    max-height: 55px;
+    min-width: 340px;
+    max-height: 59px;
+  }
+
+  .save-button_icon {
+    max-width: 20px;
   }
 
   .dialog__container {
