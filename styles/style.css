@@ -41,7 +41,7 @@
   padding-bottom: 120px;
   padding-top: 120px;
   border: 2px solid var(--border-color, #000000);
-  background-color: var(--background_light-color);
+  background-color: var(--bg-color, #ffffff);
 }
 
 .header__logo {
@@ -63,7 +63,7 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto 50px;
-  background-color: var(--background_light-color, #ffffff);
+  background-color: var(--bg-color, #ffffff);
   border: 2px solid var(--border-color, #000000);
 }
 
@@ -197,7 +197,6 @@
 }
 
 .save-button {
-  font-size: 14px;
   min-width: 306px;
   max-height: 90px;
   display: flex;
@@ -224,9 +223,7 @@
 
 .dialog__button {
   padding: 0.5rem 1rem;
-  background-color: var(--background_light-color);
   width: 100%;
-  font-size: 14px;
 }
 
 .card__like-button {

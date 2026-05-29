@@ -126,7 +126,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--background_dark-color, #000000);
+  background-color: var(--background-button-overlay, #000000);
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
   z-index: 1;
